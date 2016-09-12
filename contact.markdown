@@ -1,6 +1,4 @@
 ---
 title: Contact
 ---
-
-I live in a small hut in the mountains of Kumano Kodō on Kii Hantō and would not
-like to be contacted.
+If you want to contact me, the easiest way right now is to open a github issue. Once I find the time I will create an email-address for this blog.
