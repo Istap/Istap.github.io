@@ -21,7 +21,7 @@ main = hakyll $ do
             >>= loadAndApplyTemplate "templates/default.html" defaultContext
             >>= relativizeUrls
     
-    tags <- buildTags "posts/*" (fromCapture "tags/*html")
+    tags <- buildTags "posts/*" (fromCapture "tags/*.html")
 
     tagsRules tags $ \tag pattern -> do
         let title = "Posts tagged \"" ++ tag ++ "\""
