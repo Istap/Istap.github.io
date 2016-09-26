@@ -1,5 +1,5 @@
 ---
-First encounter with gdb
+title: First encounter with gdb
 tags: assembly, gdb
 ---
 
