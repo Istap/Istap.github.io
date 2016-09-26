@@ -1,0 +1,31 @@
+---
+First encounter with gdb
+tags: assembly, gdb
+---
+
+Last week sadly wasn't very productive as I had a lot of personal business to attend to but I solemnly swear to make up for it this week (or next week, since I will be on holidays). 
+
+Notably, this week was the first time that I was exposed to gdb. Up until now, I had always used Eclipse for my C debugging needs and although I had also toyed with the idea of learning gdb when starting with this blog, I ultimately settled on radare. However it seems as if the documentation for gdb is a lot better or at the very least a lot more accessible for beginners, which is why I will also use gdb. I will still try to learn radare2, but I might prefer gdb for now. If you have never used gdb before, I found this excellent [post](https://reverseengineering.stackexchange.com/questions/1935/how-to-handle-stripped-binaries-with-gdb-no-source-no-symbols-and-gdb-only-sho) which made it easy to start. As for radare2, I created a bare-bones cheat sheet for using gdb:
+
+        gdb = start gdb
+        file <file> = load file
+        info file = show symbols, segments, entry point etc.
+        set args <arg1> <arg2> = set arguments to use for run
+        show args = show arguments
+        run < <input> > <output> = let the program run with a specified input and output
+        break * <address> = break at address
+        break * <address> if $<register> == <value> = break at address if register has specified value
+        watch $<register> == <value> = break when register has specified value
+        set disassembly-flavor intel = set disassembly flavor
+        layout asm = show assembly instructions
+        layout regs = show register state
+        step = take a "big" step
+        stepi = step a single assembly instruction
+        <Enter> = repeat previous command
+
+On a side note, I have realized that the goals I laid down in my previous post were actually pretty terrible: I need to set myself a specific goal, which allow me to supervise my progress. For this week my goals are:
+
+- Complete the MBE preliminary crackmes
+- I am currently halfway through chapter 9 of "Assembly Language Step by Step". By next week I want to be finished with chapter 9 and chapter 10.
+
+Another side note: I have started reading "Understanding the Linux Kernel". Since I am riding the train quite often, it is nice to have some reading material. "Assembly Language" sadly doesn't really qualify, since it requires me to program, which I don't really want to do on the train.requires me to program, which I don't really want to do on the train.

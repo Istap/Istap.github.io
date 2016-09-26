@@ -8,13 +8,13 @@ tags: reverse engineering, radare2, assembly
 Using radare2 for the first time reminded me of my first time with vim: utter confusion. In fact, radare2 and vim handle similarily: both have a ton of one letter commands which can be combined with numbers, other commands, pattern matching information... Once you get the hang of it, it is a very powerful way of using a program, but getting into it is tough. Since the two are so similar in their usage, I have adapted the way I learned vim: learn the absolute minimum of commands needed to accomplish something and continue from there. Right now I mostly use the following commands in this exact order:
 
         aaa = analyze all
-	V = switch to visual mode
-	p = cycle through the views
-	:db x = set breakpoint at x (usually main)
-	:dc = continue execution until breakpoint
-	s = single step
-	c = change to cursor mode
-	; = add comment
+        V = switch to visual mode
+        p = cycle through the views
+        :db x = set breakpoint at x (usually main)
+        :dc = continue execution until breakpoint
+        s = single step
+        c = change to cursor mode
+        ; = add comment
 
 I have mostly played around with the first intro crackme of the [Modern Binary Exploitation](security.cs.rpi.edu/courses/binexp-spring2015) course. The crackme itself wasn't a challenge (password is a hardcoded string) but it was a nice way of getting familiar with radare.
 
